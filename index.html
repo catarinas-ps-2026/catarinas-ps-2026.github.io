@@ -1,303 +1,500 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>alf.io — Sistema de Gestión de Eventos Open Source</title>
-  <meta name="description" content="alf.io es un sistema de gestión de entradas y eventos de código abierto. Privacidad, seguridad y precios justos para organizadores de eventos.">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎫</text></svg>">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alf.io — Sistema de Gestión de Eventos Open Source</title>
+    <meta
+      name="description"
+      content="alf.io es un sistema de gestión de entradas y eventos de código abierto. Privacidad, seguridad y precios justos para organizadores de eventos."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎫</text></svg>"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="#" class="logo" aria-label="alf.io logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 42.33 21.17"
+            width="80"
+            height="40"
+            fill-rule="evenodd"
+          >
+            <title>alf.io</title>
+            <path
+              d="m 11.129 7.566 h 0.463 q 0.281 0 0.529 0.05 q 0.265 0.05 0.265 0.364 q 0.116 0.661 -0.777 0.645 q -0.248 -0.017 -0.463 -0.033 q -0.198 -0.017 -0.331 0 q -0.132 0 -0.116 0.083 q 0.165 0.48 0.347 1.075 q 0.198 0.595 0.43 1.191 q 0.595 1.472 1.124 2.117 q -0.281 0.347 -0.661 0.579 q -0.364 0.231 -0.397 0.231 q -0.017 0 -0.033 -0.017 l -2.332 -4.911 l -4.514 1.108 l -0.165 0.695 q -0.48 1.902 -1.075 2.646 q -0.099 0.165 -0.413 0.033 q -0.529 -0.198 -0.529 -0.331 q 0 -0.033 0.347 -0.959 q 0.347 -0.926 0.695 -1.869 q 0.364 -0.959 0.744 -2.001 q 0.397 -1.042 0.744 -1.984 q 0.347 -0.943 0.628 -1.687 q 0.281 -0.761 0.397 -1.091 q 0.116 -0.347 0.149 -0.595 q 0.05 -0.265 0.132 -0.446 q 0.165 -0.38 0.827 -0.38 q 0.711 0.397 1.091 1.042 q 0.397 0.628 0.661 1.356 q 0.281 0.728 0.546 1.472 q 0.265 0.744 0.711 1.356 q 0.149 0.232 0.446 0.248 q 0.298 0.017 0.529 0.017 z m -4.134 -3.572 q -0.132 1.009 -0.595 2.067 q -0.463 1.058 -0.744 1.654 q -0.281 0.579 -0.48 1.075 q 1.124 0 2.762 -0.661 q 0.413 -0.182 0.794 -0.331 q -0.777 -3.324 -1.737 -3.803 z"
+              fill="#ff8812"
+            />
+            <path
+              d="m 13.643 7.202 q -0.033 -0.893 -0.066 -1.588 q -0.033 -0.711 -0.05 -1.042 q 0 -0.347 -0.265 -1.67 q 0.149 -0.198 0.281 -0.38 q 0.149 -0.182 0.413 -0.182 q 0.579 0 0.893 4.878 q 0.165 2.828 0.165 5.655 q 0 0.761 -1.058 0.761 l -0.132 -0.017 q 0 -0.86 -0.05 -2.199 q -0.05 -1.339 -0.083 -2.332 q -0.017 -0.992 -0.05 -1.885 z"
+              fill="#ff8812"
+            />
+            <path
+              d="m 25.516 8.095 q 0.083 0 0.083 0.446 q 0 0.446 0.033 0.612 l -5.672 0.695 l 0.298 3.671 l -1.339 -0.066 q 0 -1.488 -0.331 -3.407 l -2.15 0.827 q -0.215 0 -0.364 -0.248 q -0.265 -0.43 -0.265 -0.777 l 2.514 -0.893 q -0.331 -2.844 -0.331 -4.614 q 0 -1.786 0.298 -2.778 q 0.298 -0.992 0.86 -1.323 q 0.579 -0.347 1.224 -0.347 q 0.645 0 1.306 0.281 q 0.678 0.281 1.29 0.711 q 0.612 0.43 1.042 0.976 q 0.43 0.529 0.43 1.042 q 0 0.397 -0.083 0.562 q -0.661 -0.926 -1.604 -1.654 q -1.124 -0.86 -2.117 -0.86 q -0.943 0 -1.257 1.339 q -0.149 0.695 -0.149 1.968 q 0 1.257 0.066 2.315 q 0.066 1.042 0.397 2.1 q 1.025 0 2.299 -0.182 q 2.447 -0.38 3.522 -0.397 z"
+              fill="#ff8812"
+            />
+            <path
+              d="m 26.392 13.634 q -0.38 -0.033 -0.38 -0.331 q 0 -0.364 0.413 -0.678 q 0.165 -0.116 0.248 -0.116 q 0.099 0 0.149 0.017 q 0.347 0 0.463 0.149 q 0.132 0.132 0.132 0.364 q 0 0.232 -0.099 0.347 q -0.099 0.116 -0.248 0.165 q -0.248 0.083 -0.678 0.083 z"
+              fill="#ff8812"
+            />
+            <path
+              d="m 29.948 5.845 q 0.215 3.092 0.364 7.16 q -0.099 0.513 -0.794 0.513 q -0.182 0 -0.38 -0.066 q -0.182 -0.083 -0.232 -0.215 v -7.392 z m -1.538 -2.249 q 0 -0.579 0.678 -0.579 q 0.446 0 0.728 0.198 q 0.05 0.182 0.05 0.364 q 0 0.165 -0.132 0.331 q -0.132 0.165 -0.397 0.165 q -0.265 0 -0.529 -0.116 q -0.265 -0.132 -0.397 -0.364 z"
+              fill="#ff8812"
+            />
+            <path
+              d="m 31.452 10.475 q 0 -1.951 1.687 -3.142 q 1.339 -0.943 3.225 -1.141 q 0.099 0 0.463 0 q 0.364 0 0.976 0.215 q 1.356 0.463 1.852 1.637 q 0.198 0.463 0.198 0.794 q 0 0.314 -0.017 0.446 q 0 2.067 -1.571 3.258 q -1.455 1.091 -3.638 1.091 q -1.571 0 -2.381 -0.728 q -0.794 -0.728 -0.794 -2.431 z m 1.141 0.397 q 0 1.025 0.546 1.389 q 0.413 0.265 1.389 0.265 q 0.976 0 1.72 -0.149 q 0.744 -0.149 1.323 -0.513 q 1.24 -0.794 1.24 -2.464 q 0 -0.992 -0.529 -1.621 q -0.579 -0.678 -1.521 -0.678 q -0.645 0.116 -1.306 0.248 q -0.645 0.132 -1.224 0.513 q -1.257 0.81 -1.637 3.01 z"
+              fill="#ff8812"
+            />
+          </svg>
+        </a>
 
-  <nav>
-    <div class="container">
-      <a href="#" class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.33 21.17" width="80" height="40">
-          <path d="M11.13 7.57h.46c.28 0 .53.05.53.36.12.66-.78.65-1.02.62-.2-.02-.33-.03-.33 0 .17.48.35 1.08.43 1.19.6 1.47 1.12 2.12 1.12 2.12-.28.35-.66.58-1.02.23l-2.33-4.91-4.52 1.11-.16.69c-.48 1.9-1.08 2.65-1.08 2.65-.1.16-.41.03-.94-.2-.53-.22-.53-.33-.53-.33s.35-.96.7-1.87c.36-.96.74-2 .74-2s.4-1.04.74-1.98c.35-.94.63-1.69.74-2.12.12-.35.15-.6.18-.84.05-.27.13-.45.28-.45.71 0 1.09 1.04 1.09 1.04.28.73.54 1.47.82 2.21.28.74.71 1.36.71 1.36.15.23.45.25.97.27zm-4.13-3.57c-.13 1.01-.6 2.07-1.06 3.1l-.75 1.65c-.2.5-.48 1.08-.48 1.08s1.12 0 2.76-.66c.41-.18.79-.33.79-.33-.78-3.32-2.26-4.84-2.26-4.84z" fill="#e67e22"/>
-          <path d="M13.64 7.2c-.03-.9-.07-1.59-.1-2.09-.04-.71-.05-1.04-.05-1.04s0-.35-.27-1.67c.15-.2.28-.38.42-.56.15-.18.41-.18.41-.18s.58 0 .9 4.88c.16 2.83.16 5.66.16 5.66 0 .76-1.06.76-1.06.76h-.13c0-.86-.05-2.2-.05-2.2s-.1-2.33-.13-3.32c0 0-.02-.99-.05-1.89z" fill="#e67e22"/>
-          <path d="M25.52 8.09c.08 0 .08.45.08.45l.03.61-5.67.7.3 3.67-1.34-.07c0-1.49-.33-3.41-.33-3.41l-2.15.83c-.22 0-.36-.25-.36-.25-.27-.43-.27-.78-.27-.78l2.52-.9c-.33-2.84-.33-4.61-.33-4.61 0-1.79.3-2.78.86-3.32.58-.35 1.22-.35 1.22-.35s.68 0 1.31.28c.68.28 1.29.71 1.29.71s.72.98.43 1.04c-.66-.93-1.6-1.65-1.6-1.65-1.13-.86-2.12-.86-2.12-.86s-.94 0-1.26 1.34c-.15.69-.15 1.97-.15 1.97s0 1.26.07 2.31c.06 1.04.4 2.1.4 2.1s1.02 0 2.3-.18c2.45-.38 3.52-.4 3.52-.4z" fill="#e67e22"/>
-          <path d="M26.39 13.63c-.38-.03-.38-.33-.38-.33s0-.36.41-.68c.17-.12.25-.12.25-.12s.1 0 .15.02c.35 0 .46.15.46.15s.13.13.13.36c0 .23-.1.35-.25.4-.25.08-.68.08-.68.08z" fill="#e67e22"/>
-          <path d="M29.95 5.86c.21 3.09.36 7.16.36 7.16-.1.51-.79.51-.79.51s-.37-.07-.38-.21V5.86h.81zm-1.54-2.25c0-.58.68-.58.68-.58s.45 0 .73.2c.05.18.05.36.05.36s-.13.17-.4.17-.8-.12-.8-.12-.26-.13-.4-.36z" fill="#e67e22"/>
-          <path d="M31.45 10.49c0-1.95 1.69-3.14 1.69-3.14s1.34-.94 3.22-1.14c.1 0 .47 0 .47 0s.97.22 1.38.86c.46.72.2 1.64.2 1.64s0 2.07-1.57 3.26c-1.46 1.09-3.64 1.09-3.64 1.09s-1.57 0-2.38-.73c-.8-.73-.8-2.43-.8-2.43zm1.14.4c0 1.02.55 1.39.55 1.39s.97.26 2.35.12c1.39-.15 2.96-.66 2.96-.66s1.24-.79 1.24-2.46c0-.99-.53-1.62-.53-1.62s-1.17-1.08-2.85-.43c-1.67.65-1.64 3.01-1.64 3.01s-.38 1.1-.92 1.1c-.54 0-.93-.55-1.05-.99 0 0 .1-.4.24-.94z" fill="#e67e22"/>
-        </svg>
-        <span>alf.io</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#about">Acerca</a></li>
-        <li><a href="#features">Características</a></li>
-        <li><a href="#tech-stack">Tecnologías</a></li>
-        <li><a href="#architecture">Arquitectura</a></li>
-        <li><a href="#workflow">Flujo</a></li>
-        <li><a href="https://github.com/alfio-event/alf.io" target="_blank">GitHub</a></li>
-      </ul>
-    </div>
-  </nav>
+        <ul class="nav-links">
+          <li><a href="#about">Acerca</a></li>
+          <li><a href="#features">Características</a></li>
+          <li><a href="#tech-stack">Tecnologías</a></li>
+          <li><a href="#architecture">Arquitectura</a></li>
+          <li><a href="#workflow">Flujo</a></li>
+          <li>
+            <a href="https://github.com/alfio-event/alf.io" target="_blank"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <section class="hero">
-    <div class="container hero-content">
-      <div class="logo-main">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.33 21.17" width="100" height="50">
-          <path d="M11.13 7.57h.46c.28 0 .53.05.53.36.12.66-.78.65-1.02.62-.2-.02-.33-.03-.33 0 .17.48.35 1.08.43 1.19.6 1.47 1.12 2.12 1.12 2.12-.28.35-.66.58-1.02.23l-2.33-4.91-4.52 1.11-.16.69c-.48 1.9-1.08 2.65-1.08 2.65-.1.16-.41.03-.94-.2-.53-.22-.53-.33-.53-.33s.35-.96.7-1.87c.36-.96.74-2 .74-2s.4-1.04.74-1.98c.35-.94.63-1.69.74-2.12.12-.35.15-.6.18-.84.05-.27.13-.45.28-.45.71 0 1.09 1.04 1.09 1.04.28.73.54 1.47.82 2.21.28.74.71 1.36.71 1.36.15.23.45.25.97.27zm-4.13-3.57c-.13 1.01-.6 2.07-1.06 3.1l-.75 1.65c-.2.5-.48 1.08-.48 1.08s1.12 0 2.76-.66c.41-.18.79-.33.79-.33-.78-3.32-2.26-4.84-2.26-4.84z" fill="#e67e22"/>
-          <path d="M13.64 7.2c-.03-.9-.07-1.59-.1-2.09-.04-.71-.05-1.04-.05-1.04s0-.35-.27-1.67c.15-.2.28-.38.42-.56.15-.18.41-.18.41-.18s.58 0 .9 4.88c.16 2.83.16 5.66.16 5.66 0 .76-1.06.76-1.06.76h-.13c0-.86-.05-2.2-.05-2.2s-.1-2.33-.13-3.32c0 0-.02-.99-.05-1.89z" fill="#e67e22"/>
-          <path d="M25.52 8.09c.08 0 .08.45.08.45l.03.61-5.67.7.3 3.67-1.34-.07c0-1.49-.33-3.41-.33-3.41l-2.15.83c-.22 0-.36-.25-.36-.25-.27-.43-.27-.78-.27-.78l2.52-.9c-.33-2.84-.33-4.61-.33-4.61 0-1.79.3-2.78.86-3.32.58-.35 1.22-.35 1.22-.35s.68 0 1.31.28c.68.28 1.29.71 1.29.71s.72.98.43 1.04c-.66-.93-1.6-1.65-1.6-1.65-1.13-.86-2.12-.86-2.12-.86s-.94 0-1.26 1.34c-.15.69-.15 1.97-.15 1.97s0 1.26.07 2.31c.06 1.04.4 2.1.4 2.1s1.02 0 2.3-.18c2.45-.38 3.52-.4 3.52-.4z" fill="#e67e22"/>
-          <path d="M26.39 13.63c-.38-.03-.38-.33-.38-.33s0-.36.41-.68c.17-.12.25-.12.25-.12s.1 0 .15.02c.35 0 .46.15.46.15s.13.13.13.36c0 .23-.1.35-.25.4-.25.08-.68.08-.68.08z" fill="#e67e22"/>
-          <path d="M29.95 5.86c.21 3.09.36 7.16.36 7.16-.1.51-.79.51-.79.51s-.37-.07-.38-.21V5.86h.81zm-1.54-2.25c0-.58.68-.58.68-.58s.45 0 .73.2c.05.18.05.36.05.36s-.13.17-.4.17-.8-.12-.8-.12-.26-.13-.4-.36z" fill="#e67e22"/>
-          <path d="M31.45 10.49c0-1.95 1.69-3.14 1.69-3.14s1.34-.94 3.22-1.14c.1 0 .47 0 .47 0s.97.22 1.38.86c.46.72.2 1.64.2 1.64s0 2.07-1.57 3.26c-1.46 1.09-3.64 1.09-3.64 1.09s-1.57 0-2.38-.73c-.8-.73-.8-2.43-.8-2.43zm1.14.4c0 1.02.55 1.39.55 1.39s.97.26 2.35.12c1.39-.15 2.96-.66 2.96-.66s1.24-.79 1.24-2.46c0-.99-.53-1.62-.53-1.62s-1.17-1.08-2.85-.43c-1.67.65-1.64 3.01-1.64 3.01s-.38 1.1-.92 1.1c-.54 0-.93-.55-1.05-.99 0 0 .1-.4.24-.94z" fill="#e67e22"/>
-        </svg>
-        <h1>alf.<span>io</span></h1>
-      </div>
-      <div class="badge">Software Libre · GPL v3 · Open Source</div>
-      <p class="tagline">Sistema de gestión de eventos y venta de entradas de código abierto. Diseñado para organizadores que valoran la privacidad, seguridad y precios justos.</p>
-      <div class="cta-buttons">
-        <a href="https://github.com/alfio-event/alf.io" class="btn btn-primary" target="_blank">Ver en GitHub</a>
-        <a href="#features" class="btn btn-outline">Explorar características</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="overline">Acerca de</span>
-        <h2>Gestión de eventos sin complicaciones</h2>
-        <p>Una plataforma completa y autogestionada para la venta de entradas y administración de eventos.</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <h3>¿Qué es alf.io?</h3>
-          <p>alf.io es un sistema gratuito y de código abierto para la gestión de eventos y venta de entradas. Permite a organizadores crear, promocionar y gestionar eventos de todo tipo —presenciales, en línea o híbridos— sin depender de plataformas externas con comisiones elevadas.</p>
-          <p>Construido con Java moderno y tecnologías web, ofrece una solución completa que incluye desde la venta de tickets con múltiples pasarelas de pago hasta la generación de facturas, códigos QR, pases para Apple Wallet y Google Wallet, y un sistema de check-in.</p>
-          <ul>
-            <li>Código abierto (GPL v3) — sin bloqueos de proveedor</li>
-            <li>Autogestionado — tus datos, tu控制</li>
-            <li>Sin comisiones por transacción</li>
-            <li>Privacidad y seguridad como prioridades</li>
-            <li>Ampliable vía extensiones JavaScript</li>
-            <li>Multilenguaje con soporte para 20+ idiomas</li>
-          </ul>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="logo-main">
+          <h1 aria-label="alf.io">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 42.33 21.17"
+              width="120"
+              height="60"
+              fill-rule="evenodd"
+              aria-hidden="true"
+            >
+              <title>alf.io</title>
+              <path
+                d="m 11.129 7.566 h 0.463 q 0.281 0 0.529 0.05 q 0.265 0.05 0.265 0.364 q 0.116 0.661 -0.777 0.645 q -0.248 -0.017 -0.463 -0.033 q -0.198 -0.017 -0.331 0 q -0.132 0 -0.116 0.083 q 0.165 0.48 0.347 1.075 q 0.198 0.595 0.43 1.191 q 0.595 1.472 1.124 2.117 q -0.281 0.347 -0.661 0.579 q -0.364 0.231 -0.397 0.231 q -0.017 0 -0.033 -0.017 l -2.332 -4.911 l -4.514 1.108 l -0.165 0.695 q -0.48 1.902 -1.075 2.646 q -0.099 0.165 -0.413 0.033 q -0.529 -0.198 -0.529 -0.331 q 0 -0.033 0.347 -0.959 q 0.347 -0.926 0.695 -1.869 q 0.364 -0.959 0.744 -2.001 q 0.397 -1.042 0.744 -1.984 q 0.347 -0.943 0.628 -1.687 q 0.281 -0.761 0.397 -1.091 q 0.116 -0.347 0.149 -0.595 q 0.05 -0.265 0.132 -0.446 q 0.165 -0.38 0.827 -0.38 q 0.711 0.397 1.091 1.042 q 0.397 0.628 0.661 1.356 q 0.281 0.728 0.546 1.472 q 0.265 0.744 0.711 1.356 q 0.149 0.232 0.446 0.248 q 0.298 0.017 0.529 0.017 z m -4.134 -3.572 q -0.132 1.009 -0.595 2.067 q -0.463 1.058 -0.744 1.654 q -0.281 0.579 -0.48 1.075 q 1.124 0 2.762 -0.661 q 0.413 -0.182 0.794 -0.331 q -0.777 -3.324 -1.737 -3.803 z"
+                fill="#ff8812"
+              />
+              <path
+                d="m 13.643 7.202 q -0.033 -0.893 -0.066 -1.588 q -0.033 -0.711 -0.05 -1.042 q 0 -0.347 -0.265 -1.67 q 0.149 -0.198 0.281 -0.38 q 0.149 -0.182 0.413 -0.182 q 0.579 0 0.893 4.878 q 0.165 2.828 0.165 5.655 q 0 0.761 -1.058 0.761 l -0.132 -0.017 q 0 -0.86 -0.05 -2.199 q -0.05 -1.339 -0.083 -2.332 q -0.017 -0.992 -0.05 -1.885 z"
+                fill="#ff8812"
+              />
+              <path
+                d="m 25.516 8.095 q 0.083 0 0.083 0.446 q 0 0.446 0.033 0.612 l -5.672 0.695 l 0.298 3.671 l -1.339 -0.066 q 0 -1.488 -0.331 -3.407 l -2.15 0.827 q -0.215 0 -0.364 -0.248 q -0.265 -0.43 -0.265 -0.777 l 2.514 -0.893 q -0.331 -2.844 -0.331 -4.614 q 0 -1.786 0.298 -2.778 q 0.298 -0.992 0.86 -1.323 q 0.579 -0.347 1.224 -0.347 q 0.645 0 1.306 0.281 q 0.678 0.281 1.29 0.711 q 0.612 0.43 1.042 0.976 q 0.43 0.529 0.43 1.042 q 0 0.397 -0.083 0.562 q -0.661 -0.926 -1.604 -1.654 q -1.124 -0.86 -2.117 -0.86 q -0.943 0 -1.257 1.339 q -0.149 0.695 -0.149 1.968 q 0 1.257 0.066 2.315 q 0.066 1.042 0.397 2.1 q 1.025 0 2.299 -0.182 q 2.447 -0.38 3.522 -0.397 z"
+                fill="#ff8812"
+              />
+              <path
+                d="m 26.392 13.634 q -0.38 -0.033 -0.38 -0.331 q 0 -0.364 0.413 -0.678 q 0.165 -0.116 0.248 -0.116 q 0.099 0 0.149 0.017 q 0.347 0 0.463 0.149 q 0.132 0.132 0.132 0.364 q 0 0.232 -0.099 0.347 q -0.099 0.116 -0.248 0.165 q -0.248 0.083 -0.678 0.083 z"
+                fill="#ff8812"
+              />
+              <path
+                d="m 29.948 5.845 q 0.215 3.092 0.364 7.16 q -0.099 0.513 -0.794 0.513 q -0.182 0 -0.38 -0.066 q -0.182 -0.083 -0.232 -0.215 v -7.392 z m -1.538 -2.249 q 0 -0.579 0.678 -0.579 q 0.446 0 0.728 0.198 q 0.05 0.182 0.05 0.364 q 0 0.165 -0.132 0.331 q -0.132 0.165 -0.397 0.165 q -0.265 0 -0.529 -0.116 q -0.265 -0.132 -0.397 -0.364 z"
+                fill="#ff8812"
+              />
+              <path
+                d="m 31.452 10.475 q 0 -1.951 1.687 -3.142 q 1.339 -0.943 3.225 -1.141 q 0.099 0 0.463 0 q 0.364 0 0.976 0.215 q 1.356 0.463 1.852 1.637 q 0.198 0.463 0.198 0.794 q 0 0.314 -0.017 0.446 q 0 2.067 -1.571 3.258 q -1.455 1.091 -3.638 1.091 q -1.571 0 -2.381 -0.728 q -0.794 -0.728 -0.794 -2.431 z m 1.141 0.397 q 0 1.025 0.546 1.389 q 0.413 0.265 1.389 0.265 q 0.976 0 1.72 -0.149 q 0.744 -0.149 1.323 -0.513 q 1.24 -0.794 1.24 -2.464 q 0 -0.992 -0.529 -1.621 q -0.579 -0.678 -1.521 -0.678 q -0.645 0.116 -1.306 0.248 q -0.645 0.132 -1.224 0.513 q -1.257 0.81 -1.637 3.01 z"
+                fill="#ff8812"
+              />
+            </svg>
+          </h1>
         </div>
-        <div class="about-visual">
-          <div class="stat-row">
-            <div class="stat">
-              <div class="number">20+</div>
-              <div class="label">Idiomas soportados</div>
+        <p class="tagline">
+          Sistema de gestión de eventos y venta de entradas de código abierto.
+          Diseñado para organizadores que valoran la privacidad, seguridad y
+          precios justos.
+        </p>
+        <div class="cta-buttons">
+          <a
+            href="https://github.com/alfio-event/alf.io"
+            class="btn btn-primary"
+            target="_blank"
+            >Ver en GitHub</a
+          >
+          <a href="#features" class="btn btn-outline"
+            >Explorar características</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="overline">Acerca de</span>
+          <h2>Gestión de eventos sin complicaciones</h2>
+          <p>
+            Una plataforma completa y autogestionada para la venta de entradas y
+            administración de eventos.
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>¿Qué es alf.io?</h3>
+            <p>
+              alf.io es un sistema gratuito y de código abierto para la gestión
+              de eventos y venta de entradas. Permite a organizadores crear,
+              promocionar y gestionar eventos de todo tipo sin depender de
+              plataformas externas con comisiones elevadas.
+            </p>
+            <p>
+              Construido con Java moderno y tecnologías web, ofrece una solución
+              completa que incluye desde la venta de tickets con múltiples
+              pasarelas de pago hasta la generación de facturas, códigos QR,
+              pases para Apple Wallet y Google Wallet, y un sistema de check-in.
+            </p>
+            <ul>
+              <li>Código abierto (GPL v3), sin bloqueos de proveedor</li>
+              <li>Autogestionado, tus datos, tu control</li>
+              <li>Sin comisiones por transacción</li>
+              <li>Privacidad y seguridad como prioridades</li>
+              <li>Ampliable vía extensiones JavaScript</li>
+              <li>Multilenguaje con soporte para 14 idiomas</li>
+            </ul>
+          </div>
+          <div class="about-visual">
+            <div class="stat-row">
+              <div class="stat">
+                <div class="number">14</div>
+                <div class="label">Idiomas soportados</div>
+              </div>
+              <div class="stat">
+                <div class="number">7</div>
+                <div class="label">Pasarelas de pago</div>
+              </div>
+              <div class="stat">
+                <div class="number">3</div>
+                <div class="label">Formatos de evento</div>
+              </div>
             </div>
-            <div class="stat">
-              <div class="number">6</div>
-              <div class="label">Pasarelas de pago</div>
+            <div
+              style="
+                padding: 20px;
+                text-align: center;
+                background: #fff;
+                border-radius: 8px;
+                border: 1px solid var(--border);
+              "
+            >
+              <p style="font-weight: 600; margin-bottom: 6px">
+                "La mejor manera de vender entradas sin renunciar al control de
+                tus datos."
+              </p>
+              <p style="font-size: 0.85rem; color: var(--text-light)">
+                Comunidad Open Source
+              </p>
             </div>
-            <div class="stat">
-              <div class="number">3</div>
-              <div class="label">Formatos de evento</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="overline">Características</span>
+          <h2>Todo lo que necesitas para gestionar eventos</h2>
+          <p>
+            Un conjunto completo de herramientas para la creación, venta y
+            administración de eventos.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="icon">🎟️</div>
+            <h4>Venta de Entradas</h4>
+            <p>
+              Múltiples categorías de tickets, códigos promocionales, límites de
+              cupo y precios dinámicos.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">💳</div>
+            <h4>Pasarelas de Pago</h4>
+            <p>
+              Stripe, PayPal, Mollie, Saferpay, Revolut (auto-matching),
+              transferencia bancaria y pago en sitio.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">📱</div>
+            <h4>Pases Digitales</h4>
+            <p>
+              Tickets con código QR, Apple Wallet y Google Wallet. Check-in
+              rápido desde cualquier dispositivo.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">📄</div>
+            <h4>Facturación Automática</h4>
+            <p>
+              Facturas en PDF, soporte IVA (incluido/excluido, reverse charge),
+              factura electrónica italiana.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">🔌</div>
+            <h4>Extensiones vía Scripts</h4>
+            <p>
+              Sistema de extensiones JavaScript (Rhino) para personalizar flujos
+              de reserva, validación y más.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">📧</div>
+            <h4>Notificaciones</h4>
+            <p>
+              Emails transaccionales con plantillas MJML responsivas. Soporte
+              SMTP, SendGrid, Mailgun, Mailjet.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">🔒</div>
+            <h4>Seguridad</h4>
+            <p>
+              Spring Security, OpenID Connect, BCrypt, reCAPTCHA, CSP headers,
+              RLS en PostgreSQL.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">📊</div>
+            <h4>Panel de Administración</h4>
+            <p>
+              Interfaz moderna con Lit 3 + Shoelace. Gestión completa de
+              eventos, asistentes y reportes.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">🌐</div>
+            <h4>Multilenguaje</h4>
+            <p>
+              14 idiomas disponibles. La interfaz pública y los emails se
+              adaptan al idioma del usuario.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tech-stack">
+      <div class="container">
+        <div class="section-header">
+          <span class="overline">Stack Tecnológico</span>
+          <h2>Tecnologías modernas y robustas</h2>
+          <p>
+            Construido con un stack probado en producción que prioriza
+            rendimiento, seguridad y mantenibilidad.
+          </p>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <div class="tech-name">Java 17</div>
+            <div class="tech-cat">Lenguaje</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Spring Boot 3.5</div>
+            <div class="tech-cat">Framework</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">PostgreSQL</div>
+            <div class="tech-cat">Base de Datos</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Angular 17</div>
+            <div class="tech-cat">Frontend Público</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Lit 3 + Shoelace</div>
+            <div class="tech-cat">Admin Frontend</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Stripe / PayPal</div>
+            <div class="tech-cat">Pagos</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Flyway</div>
+            <div class="tech-cat">Migraciones</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Docker</div>
+            <div class="tech-cat">Despliegue</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Gradle</div>
+            <div class="tech-cat">Build</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">MJML</div>
+            <div class="tech-cat">Email Templates</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Mustache</div>
+            <div class="tech-cat">Server-side Templates</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">ZXing</div>
+            <div class="tech-cat">Códigos QR</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="architecture">
+      <div class="container">
+        <div class="section-header">
+          <span class="overline">Arquitectura</span>
+          <h2>Arquitectura monolítica con capas bien definidas</h2>
+          <p>
+            alf.io sigue una arquitectura Spring Boot monolítica con separación
+            clara de responsabilidades.
+          </p>
+        </div>
+        <div class="arch-diagram">
+          <div class="arch-row">
+            <div class="arch-label">Presentación</div>
+            <div class="arch-items">
+              <span class="arch-tag spring">Spring MVC</span>
+              <span class="arch-tag frontend">Angular SPA</span>
+              <span class="arch-tag frontend">Lit Admin UI</span>
+              <span class="arch-tag util">Mustache Templates</span>
+              <span class="arch-tag util">REST API v2</span>
             </div>
           </div>
-          <div style="padding: 20px; text-align: center; background: #fff; border-radius: 8px; border: 1px solid var(--border);">
-            <p style="font-weight: 600; margin-bottom: 6px;">"La mejor manera de vender entradas sin renunciar al control de tus datos."</p>
-            <p style="font-size: 0.85rem; color: var(--text-light);">Comunidad Open Source</p>
+          <div class="arch-row">
+            <div class="arch-label">Negocio</div>
+            <div class="arch-items">
+              <span class="arch-tag java">EventManager</span>
+              <span class="arch-tag java">TicketManager</span>
+              <span class="arch-tag java">PaymentManager</span>
+              <span class="arch-tag java">SubscriptionManager</span>
+              <span class="arch-tag java">CheckInManager</span>
+              <span class="arch-tag util">Extension Scripts</span>
+            </div>
+          </div>
+          <div class="arch-row">
+            <div class="arch-label">Datos</div>
+            <div class="arch-items">
+              <span class="arch-tag db">PostgreSQL</span>
+              <span class="arch-tag db">Flyway Migrations</span>
+              <span class="arch-tag db">HikariCP Pool</span>
+              <span class="arch-tag db">Row-Level Security</span>
+            </div>
+          </div>
+          <div class="arch-row">
+            <div class="arch-label">Pagos</div>
+            <div class="arch-items">
+              <span class="arch-tag payment">Stripe</span>
+              <span class="arch-tag payment">PayPal</span>
+              <span class="arch-tag payment">Mollie</span>
+              <span class="arch-tag payment">Saferpay</span>
+              <span class="arch-tag payment">Revolut</span>
+              <span class="arch-tag payment">Bank Transfer</span>
+            </div>
+          </div>
+          <div class="arch-row">
+            <div class="arch-label">Infraestructura</div>
+            <div class="arch-items">
+              <span class="arch-tag devops">Docker</span>
+              <span class="arch-tag devops">GitHub Actions</span>
+              <span class="arch-tag devops">Kubernetes</span>
+              <span class="arch-tag security">Spring Security</span>
+              <span class="arch-tag security">OpenID Connect</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section-alt" id="features">
-    <div class="container">
-      <div class="section-header">
-        <span class="overline">Características</span>
-        <h2>Todo lo que necesitas para gestionar eventos</h2>
-        <p>Un conjunto completo de herramientas para la creación, venta y administración de eventos.</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="icon">🎟️</div>
-          <h4>Venta de Entradas</h4>
-          <p>Múltiples categorías de tickets, códigos promocionales, límites de cupo y precios dinámicos.</p>
+    <section class="section" id="workflow">
+      <div class="container">
+        <div class="section-header">
+          <span class="overline">Flujo de trabajo</span>
+          <h2>Así funciona una reserva</h2>
+          <p>
+            El proceso completo desde que un usuario elige un evento hasta que
+            recibe su ticket.
+          </p>
         </div>
-        <div class="feature-card">
-          <div class="icon">💳</div>
-          <h4>Pasarelas de Pago</h4>
-          <p>Stripe, PayPal, Mollie, Saferpay, transferencia bancaria y pago en sitio. Con 3D Secure / SCA.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon">📱</div>
-          <h4>Pases Digitales</h4>
-          <p>Tickets con código QR, Apple Wallet y Google Wallet. Check-in rápido desde cualquier dispositivo.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon">📄</div>
-          <h4>Facturación Automática</h4>
-          <p>Facturas en PDF, soporte IVA (incluido/excluido, reverse charge), factura electrónica italiana.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon">🔌</div>
-          <h4>Extensiones vía Scripts</h4>
-          <p>Sistema de extensiones JavaScript (Rhino) para personalizar flujos de reserva, validación y más.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon">📧</div>
-          <h4>Notificaciones</h4>
-          <p>Emails transaccionales con plantillas MJML responsivas. Soporte SMTP, SendGrid, Mailgun, Mailjet.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon">🔒</div>
-          <h4>Seguridad</h4>
-          <p>Spring Security, OpenID Connect, BCrypt, reCAPTCHA, CSP headers, RLS en PostgreSQL.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon">📊</div>
-          <h4>Panel de Administración</h4>
-          <p>Interfaz moderna con Lit 3 + Shoelace. Gestión completa de eventos, asistentes y reportes.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon">🌐</div>
-          <h4>Multilenguaje</h4>
-          <p>Más de 20 idiomas disponibles. La interfaz pública y los emails se adaptan al idioma del usuario.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="tech-stack">
-    <div class="container">
-      <div class="section-header">
-        <span class="overline">Stack Tecnológico</span>
-        <h2>Tecnologías modernas y robustas</h2>
-        <p>Construido con un stack probado en producción que prioriza rendimiento, seguridad y mantenibilidad.</p>
-      </div>
-      <div class="tech-grid">
-        <div class="tech-card"><div class="tech-name">Java 17</div><div class="tech-cat">Lenguaje</div></div>
-        <div class="tech-card"><div class="tech-name">Spring Boot 3</div><div class="tech-cat">Framework</div></div>
-        <div class="tech-card"><div class="tech-name">PostgreSQL</div><div class="tech-cat">Base de Datos</div></div>
-        <div class="tech-card"><div class="tech-name">Angular 17</div><div class="tech-cat">Frontend Público</div></div>
-        <div class="tech-card"><div class="tech-name">Lit 3 + Shoelace</div><div class="tech-cat">Admin Frontend</div></div>
-        <div class="tech-card"><div class="tech-name">Stripe / PayPal</div><div class="tech-cat">Pagos</div></div>
-        <div class="tech-card"><div class="tech-name">Flyway</div><div class="tech-cat">Migraciones</div></div>
-        <div class="tech-card"><div class="tech-name">Docker</div><div class="tech-cat">Despliegue</div></div>
-        <div class="tech-card"><div class="tech-name">Gradle</div><div class="tech-cat">Build</div></div>
-        <div class="tech-card"><div class="tech-name">MJML</div><div class="tech-cat">Email Templates</div></div>
-        <div class="tech-card"><div class="tech-name">Mustache</div><div class="tech-cat">Server-side Templates</div></div>
-        <div class="tech-card"><div class="tech-name">ZXing</div><div class="tech-cat">Códigos QR</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt" id="architecture">
-    <div class="container">
-      <div class="section-header">
-        <span class="overline">Arquitectura</span>
-        <h2>Arquitectura monolítica con capas bien definidas</h2>
-        <p>alf.io sigue una arquitectura Spring Boot monolítica con separación clara de responsabilidades.</p>
-      </div>
-      <div class="arch-diagram">
-        <div class="arch-row">
-          <div class="arch-label">Presentación</div>
-          <div class="arch-items">
-            <span class="arch-tag spring">Spring MVC</span>
-            <span class="arch-tag frontend">Angular SPA</span>
-            <span class="arch-tag frontend">Lit Admin UI</span>
-            <span class="arch-tag util">Mustache Templates</span>
-            <span class="arch-tag util">REST API v2</span>
+        <div class="workflow-steps">
+          <div class="workflow-step">
+            <div class="step-num">1</div>
+            <h4>Selección</h4>
+            <p>
+              El usuario visita el evento y selecciona los tickets deseados
+              junto con sus preferencias.
+            </p>
           </div>
-        </div>
-        <div class="arch-row">
-          <div class="arch-label">Negocio</div>
-          <div class="arch-items">
-            <span class="arch-tag java">EventManager</span>
-            <span class="arch-tag java">TicketManager</span>
-            <span class="arch-tag java">PaymentManager</span>
-            <span class="arch-tag java">SubscriptionManager</span>
-            <span class="arch-tag java">CheckInManager</span>
-            <span class="arch-tag util">Extension Scripts</span>
+          <div class="workflow-step">
+            <div class="step-num">2</div>
+            <h4>Reserva</h4>
+            <p>
+              Se completa el formulario con datos del asistente y se crea una
+              reserva temporal con expiración.
+            </p>
           </div>
-        </div>
-        <div class="arch-row">
-          <div class="arch-label">Datos</div>
-          <div class="arch-items">
-            <span class="arch-tag db">PostgreSQL</span>
-            <span class="arch-tag db">Flyway Migrations</span>
-            <span class="arch-tag db">HikariCP Pool</span>
-            <span class="arch-tag db">Row-Level Security</span>
+          <div class="workflow-step">
+            <div class="step-num">3</div>
+            <h4>Pago</h4>
+            <p>
+              El usuario es redirigido a la pasarela de pago. Stripe, PayPal,
+              Mollie y otros con soporte 3D Secure.
+            </p>
           </div>
-        </div>
-        <div class="arch-row">
-          <div class="arch-label">Pagos</div>
-          <div class="arch-items">
-            <span class="arch-tag payment">Stripe</span>
-            <span class="arch-tag payment">PayPal</span>
-            <span class="arch-tag payment">Mollie</span>
-            <span class="arch-tag payment">Saferpay</span>
-            <span class="arch-tag payment">Bank Transfer</span>
-          </div>
-        </div>
-        <div class="arch-row">
-          <div class="arch-label">Infraestructura</div>
-          <div class="arch-items">
-            <span class="arch-tag devops">Docker</span>
-            <span class="arch-tag devops">GitHub Actions</span>
-            <span class="arch-tag devops">Kubernetes</span>
-            <span class="arch-tag security">Spring Security</span>
-            <span class="arch-tag security">OpenID Connect</span>
+          <div class="workflow-step">
+            <div class="step-num">4</div>
+            <h4>Confirmación</h4>
+            <p>
+              Se generan los tickets con códigos QR, se envía email de
+              confirmación y se activan los pases digitales.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="workflow">
-    <div class="container">
-      <div class="section-header">
-        <span class="overline">Flujo de trabajo</span>
-        <h2>Así funciona una reserva</h2>
-        <p>El proceso completo desde que un usuario elige un evento hasta que recibe su ticket.</p>
-      </div>
-      <div class="workflow-steps">
-        <div class="workflow-step">
-          <div class="step-num">1</div>
-          <h4>Selección</h4>
-          <p>El usuario visita el evento y selecciona los tickets deseados junto con sus preferencias.</p>
-        </div>
-        <div class="workflow-step">
-          <div class="step-num">2</div>
-          <h4>Reserva</h4>
-          <p>Se completa el formulario con datos del asistente y se crea una reserva temporal con expiración.</p>
-        </div>
-        <div class="workflow-step">
-          <div class="step-num">3</div>
-          <h4>Pago</h4>
-          <p>El usuario es redirigido a la pasarela de pago. Stripe, PayPal y otros con soporte 3D Secure.</p>
-        </div>
-        <div class="workflow-step">
-          <div class="step-num">4</div>
-          <h4>Confirmación</h4>
-          <p>Se generan los tickets con códigos QR, se envía email de confirmación y se activan los pases digitales.</p>
+    <section class="cta-section">
+      <div class="container">
+        <h2>Únete a la comunidad</h2>
+        <p>
+          alf.io es software libre impulsado por una comunidad global.
+          Contribuye, reporta issues o simplemente pruébalo.
+        </p>
+        <div class="cta-buttons">
+          <a
+            href="https://github.com/alfio-event/alf.io"
+            class="btn btn-primary"
+            target="_blank"
+            >Ir al repositorio</a
+          >
+          <a href="https://alf.io" class="btn btn-outline" target="_blank"
+            >Sitio oficial</a
+          >
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="cta-section">
-    <div class="container">
-      <h2>Únete a la comunidad</h2>
-      <p>alf.io es software libre impulsado por una comunidad global. Contribuye, reporta issues o simplemente pruébalo.</p>
-      <div class="cta-buttons">
-        <a href="https://github.com/alfio-event/alf.io" class="btn btn-primary" target="_blank">Ir al repositorio</a>
-        <a href="https://alf.io" class="btn btn-outline" target="_blank">Sitio oficial</a>
+    <footer>
+      <div class="container">
+        <div class="footer-copy">alf.io — Open Source Event Management</div>
+        <div class="footer-links">
+          <a href="https://github.com/alfio-event/alf.io" target="_blank"
+            >GitHub</a
+          >
+          <a href="https://alf.io" target="_blank">Sitio Web</a>
+          <a href="https://alf.io/docs/" target="_blank">Documentación</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <footer>
-    <div class="container">
-      <div class="footer-copy">alf.io — Open Source Event Management</div>
-      <div class="footer-links">
-        <a href="https://github.com/alfio-event/alf.io" target="_blank">GitHub</a>
-        <a href="https://alf.io" target="_blank">Sitio Web</a>
-        <a href="https://alf.io/docs/" target="_blank">Documentación</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

@@ -160,19 +160,35 @@ nav .nav-links a:hover {
 }
 
 .hero .logo-main {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+}
+
+.hero-catarinas-logo {
+  height: 140px;
+  width: 140px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 16px rgba(230, 126, 34, 0.15));
+  transition: transform 0.3s ease;
+}
+
+.hero-catarinas-logo:hover {
+  transform: scale(1.05);
 }
 
 .hero .logo-main svg {
-  height: 48px;
+  height: 96px;
 }
 
 .hero .logo-main h1 {
   font-size: 3.5rem;
   font-weight: 800;
+  margin: 0;
+  line-height: 1;
+  display: flex;
 }
 
 .hero .logo-main h1 span {
@@ -196,35 +212,6 @@ nav .nav-links a:hover {
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 20px;
-}
-
-.hero-badge-team {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(230, 126, 34, 0.08);
-  border: 1px solid rgba(230, 126, 34, 0.15);
-  color: var(--primary-dark);
-  padding: 6px 16px;
-  border-radius: 30px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 24px;
-  box-shadow: 0 2px 10px rgba(230, 126, 34, 0.05);
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
-}
-
-.hero-badge-team:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(230, 126, 34, 0.1);
-}
-
-.hero-badge-team img {
-  height: 18px;
-  width: 18px;
-  object-fit: contain;
 }
 
 .hero .cta-buttons {
@@ -695,6 +682,13 @@ footer .footer-copy {
   }
   .hero .logo-main h1 {
     font-size: 2.2rem;
+  }
+  .hero .logo-main svg {
+    height: 64px;
+  }
+  .hero-catarinas-logo {
+    height: 90px;
+    width: 90px;
   }
   .hero .tagline {
     font-size: 1.1rem;
